@@ -6,7 +6,7 @@ const config = {
 module.exports = {
   siteMetadata: {
     title: `Awesome Blog`,
-    siteUrl: `minimal-awesome-blog.netlify.app`,
+    siteUrl: `http://localhost:8000/`,
     description: `An awesome blog built with React`,
     author: `@JackMkimbo`,
   },
