@@ -7,7 +7,6 @@ import SEO from '../components/seo'
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Divider from '@material-ui/core/Divider'
-import ListSubheader from '@material-ui/core/ListSubheader'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
@@ -21,8 +20,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 import StarIcon from '@material-ui/icons/Star'
 import InfoIcon from '@material-ui/icons/Info'
-import Add from '@material-ui/icons/add'
-import Remove from '@material-ui/icons/remove'
 import ExpandLess from '@material-ui/icons/ExpandLess'
 import ExpandMore from '@material-ui/icons/ExpandMore'
 
@@ -64,6 +61,7 @@ const About = () => {
       case 'faqs':
         setFaqs(!faqs)
         break
+      default:
     }
   }
   const [expanded, setExpanded] = React.useState(false)

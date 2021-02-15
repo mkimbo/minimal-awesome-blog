@@ -6,22 +6,9 @@ import Image from '../components/image'
 import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
 
-import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import Divider from '@material-ui/core/Divider'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    backgroundColor: theme.palette.background.paper,
-  },
-  nested: {
-    paddingLeft: theme.spacing(4),
-  },
-}))
 
 const IndexPage = ({ data }) => {
-  const classes = useStyles()
   const postEdges = data.allMarkdownRemark.edges
   return (
     <Layout>

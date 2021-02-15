@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { Button, Grid, Typography } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
