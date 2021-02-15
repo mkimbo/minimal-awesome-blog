@@ -45,7 +45,6 @@ export const pageQuery = graphql`
             slug
             date
           }
-          snippet
           frontmatter {
             title
             tags
