@@ -6,13 +6,13 @@
 
 A minimal styled and feature rich blog made with Gatsby and Material UI
 
-[Blog Demo.](https://hyblog.netlify.app/)
+[Blog Demo.](https://minimal-awesome-blog.netlify.app/)
 
 This blog is based on the starter [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter")
 
 ## Technologies
 
-This blog was made with the following technologies:
+This blog was made with the JAMSTACK architecture using the following technologies:
 
 - React
 - Gatsby
@@ -37,6 +37,7 @@ Full feature list:
 
 * Posts in Markdown
   - Embedded Tweets in blog
+  - Embedded Youtube videos
 * Tags
   - Seprate page for posts under each tag
 * Categories
@@ -51,11 +52,10 @@ Full feature list:
 
 ## NetlifyCMS - Coming Soon
 
-## Theming
+- Sipmle and Easy to use Admin panel from Netlify CMS to add new posts and change basic website info
 
-```
+## Theming
 
 # Author
 
-Jack Mkimbo ([@JackMkimbo](https://twitter.com/JackMkimbo))
-```
+[@JackMkimbo](https://twitter.com/JackMkimbo)

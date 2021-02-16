@@ -20,7 +20,7 @@ const IndexPage = () => {
           </div>
         </Grid>
         <Grid item xs={10}>
-          <Typography variant="h3">Awesome Blog</Typography>
+          <Typography variant="h4">Awesome Blog</Typography>
           <Typewriter />
           <SocialMedia />
         </Grid>

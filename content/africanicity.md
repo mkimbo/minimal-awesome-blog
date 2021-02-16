@@ -1,6 +1,6 @@
 ---
 title: 'Africanicity: The African Spring'
-cover: '6.jpg'
+cover: 'blog4.jpg'
 category: 'african-affairs'
 date: '2020-12-25'
 slug: 'africanicity-together'

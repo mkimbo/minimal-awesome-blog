@@ -60,13 +60,13 @@ const Typewriter = () => {
   }, [refresh])
   return (
     <div className="typewriter">
-      <strong>Features</strong>
+      <strong>Whats inside</strong>
       <Typography variant="body" className="writer">
         <strong
           className="typewrite"
           data-period="3000"
-          data-type='[ "Homescreen access.", 
-                "Offline support.", "SEO ready.", "Easy to customize." ]'
+          data-type='[ "Organized posts.", 
+                "Offline support.", "SEO ready.", "Easily customizable layout." ]'
         >
           <span className="wrap"></span>
         </strong>

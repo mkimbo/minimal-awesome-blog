@@ -6,9 +6,9 @@ const config = {
 module.exports = {
   siteMetadata: {
     title: `Awesome Blog`,
-    siteUrl: `http://localhost:8000/`,
+    siteUrl: `https://minimal-awesome-blog.netlify.app/`,
     description: `An awesome blog built with React`,
-    author: `@JackMkimbo`,
+    author: `JackMkimbo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -56,16 +56,6 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-custom-blocks',
-            options: {
-              blocks: {
-                snippet: {
-                  classes: 'snippet',
-                },
-              },
-            },
-          },
-          {
             resolve: 'gatsby-remark-responsive-iframe',
           },
           'gatsby-remark-prismjs',
@@ -77,12 +67,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: '#228ce3',
-        showSpinner: true,
+        color: 'blue',
+        showSpinner: false,
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-catch-links`,
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -115,12 +106,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `awesome-blog`,
-        short_name: `awesome-blog`,
+        name: `Awesome Blog`,
+        short_name: `Awesome Blog`,
         description: `An awesome blog built with React`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#6806c9`,
+        theme_color: `#6806c9`,
         display: `standalone`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

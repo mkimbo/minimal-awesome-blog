@@ -28,40 +28,39 @@ const useStyles = makeStyles((theme) => ({
 }))
 const ShareLinks = ({ postPath, postNode }) => {
   const classes = useStyles()
-  const post = postNode.frontmatter
   return (
     <div className={classes.SocialLinks}>
       <WhatsappShareButton
-        url={`https://awesome-blog.netlify.app${postPath}`}
-        title={`Check out this awesome post: ${post.title}`}
+        url={`https://minimal-awesome-blog.netlify.app`}
+        title={`Check out this awesome blog created by Jack`}
       >
         <WhatsappIcon round size={36} />
       </WhatsappShareButton>
       <TwitterShareButton
-        url={`https://awesome-blog.netlify.app${postPath}`}
-        title={`Check out this awesome post: ${post.title}`}
+        url={`https://minimal-awesome-blog.netlify.app`}
+        title={`Check out this awesome blog created by Jack`}
       >
         <TwitterIcon round size={36} />
       </TwitterShareButton>
       <FacebookShareButton
-        url={`https://awesome-blog.netlify.app${postPath}`}
-        quote={postNode.excerpt}
+        url={`https://minimal-awesome-blog.netlify.app`}
+        quote={`Check out this awesome blog created by Jack`}
       >
         <FacebookIcon round size={36} />
       </FacebookShareButton>
       <LinkedinShareButton
-        url={`https://awesome-blog.netlify.app${postPath}`}
-        title={`Check out this awesome post: ${post.title}`}
-        description={postNode.excerpt}
+        url={`https://minimal-awesome-blog.netlify.app`}
+        title={`Check out this awesome blog`}
+        description={`It was created by Jack`}
       >
         <LinkedinIcon round size={36} />
       </LinkedinShareButton>
-      <TelegramShareButton url={`https://awesome-blog.netlify.app${postPath}`}>
+      <TelegramShareButton url={`https://minimal-awesome-blog.netlify.app`}>
         <TelegramIcon round size={36} />
       </TelegramShareButton>
       <RedditShareButton
-        url={`https://awesome-blog.netlify.app${postPath}`}
-        title={`Check out this awesome post: ${post.title}`}
+        url={`https://minimal-awesome-blog.netlify.app`}
+        title={`Check out this awesome blog created by Jack`}
       >
         <RedditIcon round size={36} />
       </RedditShareButton>

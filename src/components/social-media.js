@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { IconButton } from '@material-ui/core'
-import { Facebook, Twitter, Instagram } from '@material-ui/icons'
+import { Facebook, Twitter, Language } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   SocialMedia: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   Twitter: {
     color: '#1d07e6',
   },
-  Instagram: {
+  Language: {
     color: '#f30843',
   },
 }))
@@ -28,14 +28,14 @@ const SocialMedia = () => {
   const classes = useStyles()
   return (
     <div className={classes.SocialMedia}>
-      <IconButton>
+      <IconButton href="https://facebook.com/Jack.robinz">
         <Facebook className={classes.Facebook} />
       </IconButton>
-      <IconButton>
+      <IconButton href="https://twitter.com/JackMkimbo">
         <Twitter className={classes.Twitter} />
       </IconButton>
-      <IconButton>
-        <Instagram className={classes.Instagram} />
+      <IconButton href="https://jackmkimbo.netlify.app">
+        <Language className={classes.Language} />
       </IconButton>
     </div>
   )

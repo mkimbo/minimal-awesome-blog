@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Image from '../components/image'
 import PostPreview from '../components/post-preview'
 
 import Grid from '@material-ui/core/Grid'
@@ -14,8 +15,13 @@ const Category = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <Grid container spacing={3} justify="center">
-        <Grid item>
+      <Grid container spacing={3} justify="center" align="center">
+        <Grid item xs={12}>
+          <div style={{ maxWidth: `100px`, marginBottom: `1.45rem` }}>
+            <Image />
+          </div>
+        </Grid>
+        <Grid item xs={12}>
           <h3>{`${totalposts} categorized under "${category}"`}</h3>
         </Grid>
       </Grid>

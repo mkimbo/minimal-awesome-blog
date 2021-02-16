@@ -13,13 +13,13 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <Grid container spacing={3} justify="center">
-        <Grid item xs={2}>
+      <Grid container spacing={3} justify="center" align="center">
+        <Grid item xs={12}>
           <div style={{ maxWidth: `100px`, marginBottom: `1.45rem` }}>
             <Image />
           </div>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <h2>Awesome posts</h2>
         </Grid>
       </Grid>

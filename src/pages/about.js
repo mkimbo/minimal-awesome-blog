@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
@@ -72,18 +72,18 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <Grid container spacing={3} justify="center">
-        <Grid item xs={2}>
+      <Grid container spacing={3} justify="center" align="center">
+        <Grid item xs={12}>
           <div style={{ maxWidth: `100px`, marginBottom: `1.45rem` }}>
             <Image />
           </div>
         </Grid>
-        <Grid item xs={8}>
-          <h5>
-            Hyblog is part of the Hyreads platform and this page briefly
-            explains all the features of Hyreads including this blog for
-            informational purposes.
-          </h5>
+        <Grid item xs={12}>
+          <Typography variant="h6">
+            Deliver content to your readers faster,securely and across all
+            devices on a platform that suits your every need, including your
+            budget.
+          </Typography>
         </Grid>
       </Grid>
       <Divider />
@@ -92,7 +92,7 @@ const About = () => {
           <ListItemIcon>
             <StarIcon color="primary" />
           </ListItemIcon>
-          <ListItemText primary="Hyreads Features" />
+          <ListItemText primary="Blog Features" />
           {features ? (
             <ExpandMore color="primary" />
           ) : (
@@ -109,19 +109,17 @@ const About = () => {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography className={classes.heading}>Discourse</Typography>
+              <Typography className={classes.heading}>Secure</Typography>
               <Typography className={classes.secondaryHeading}>
-                Share and Broadcast Ideas
+                Online security is important
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.Nulla
-                facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                Aliquam eget maximus est, id dignissim quam.Nulla facilisi.
-                Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam
-                eget maximus est, id dignissim quam.
+                Awesome blog is well secured against random attacks from hackers
+                as seen on a certain blogging platform whose name starts with
+                letter W. Get in touch I might tell you who they are and how
+                awesome blog overcomes these security challenges.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -134,18 +132,17 @@ const About = () => {
               aria-controls="panel2bh-content"
               id="panel2bh-header"
             >
-              <Typography className={classes.heading}>ChatRoom</Typography>
+              <Typography className={classes.heading}>Speed</Typography>
               <Typography className={classes.secondaryHeading}>
-                Connect with your contacts
+                Faster Loading times
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Donec placerat, lectus sed mattis semper, neque lectus feugiat
-                lectus, varius pulvinar diam eros in elit. Pellentesque
-                convallis laoreet laoreet.Donec placerat, lectus sed mattis
-                semper, neque lectus feugiat lectus, varius pulvinar diam eros
-                in elit. Pellentesque convallis laoreet laoreet.
+                This blog is statically generated which makes it blazing fast
+                even in slow internet connections. It also uses efficient image
+                optimization technology that ensures all images are smoothly
+                loaded and optimized for all screen sizes.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -158,20 +155,15 @@ const About = () => {
               aria-controls="panel3bh-content"
               id="panel3bh-header"
             >
-              <Typography className={classes.heading}>Creators</Typography>
+              <Typography className={classes.heading}>SEO</Typography>
               <Typography className={classes.secondaryHeading}>
-                Express your ideas with creativity
+                Indexed on google search
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
+                Awesome blog has already been optimized for search engines to
+                enable readers to easily find the blog site online.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -184,16 +176,20 @@ const About = () => {
               aria-controls="panel4bh-content"
               id="panel4bh-header"
             >
-              <Typography className={classes.heading}>Journals</Typography>
+              <Typography className={classes.heading}>
+                Offline Support
+              </Typography>
               <Typography className={classes.secondaryHeading}>
-                Read on from the greatest philosophers
+                For your smartphone and computer
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
+                The magic of this PWA blog site is that it can be installed on
+                any Android, IOS or Windows platform to provide full access to
+                the blog like a native application. All posts can be read
+                offline and new posts are updated whenever there is an internet
+                connection.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -206,18 +202,17 @@ const About = () => {
               aria-controls="panel5bh-content"
               id="panel5bh-header"
             >
-              <Typography className={classes.heading}>Hyblog</Typography>
+              <Typography className={classes.heading}>Organized</Typography>
               <Typography className={classes.secondaryHeading}>
-                well, this is this
+                Categories and tags
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue..
+                All the posts are grouped into categories and also tagged with
+                relevant phrases. These categories and tags organise the blog so
+                you can easily get all posts in a particular category or those
+                tagged with a certain phrase.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -244,17 +239,16 @@ const About = () => {
               id="panel6bh-header"
             >
               <Typography className={classes.faqHeading}>
-                What is the purpose of the Hyreads platform?
+                What is a PWA?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.Nulla
-                facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                Aliquam eget maximus est, id dignissim quam.Nulla facilisi.
-                Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam
-                eget maximus est, id dignissim quam.
+                A Progressive Web App is a web application that is normally
+                accessed via a web browser but has superpowers that allow it to
+                be installed on almost all mobile and computer systems just like
+                normal apps from Play/App Store or desktop applicatons. It also
+                offers offline support among other things.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -268,17 +262,21 @@ const About = () => {
               id="panel7bh-header"
             >
               <Typography className={classes.faqHeading}>
-                How Do I Sign Up for Hyreads?
+                How do I install a PWA like Awesome Blog?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.Nulla
-                facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                Aliquam eget maximus est, id dignissim quam.Nulla facilisi.
-                Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam
-                eget maximus est, id dignissim quam.
+                Installing a PWA is easy. For android users on google chrome, a
+                pop up should have appeared at the bottom of your screen when
+                you accessed the site the first time.This{' '}
+                <Link to={`/blog/installing-awesome-blog`}>
+                  post on this blog
+                </Link>{' '}
+                shows the few installation steps for IOS Safari,Windows,
+                Mac,Linux users and also android users. Uninstalling a PWA is
+                similar to any other application. N/B..IOS Chrome doesnt support
+                PWA technology.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -292,17 +290,15 @@ const About = () => {
               id="panel8bh-header"
             >
               <Typography className={classes.faqHeading}>
-                How Do I Subscribe to the Hyreads Blog Updates?
+                How Do I Migrate from my normal website to a PWA?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className={classes.description}>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.Nulla
-                facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                Aliquam eget maximus est, id dignissim quam.Nulla facilisi.
-                Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam
-                eget maximus est, id dignissim quam.
+                Awesome blog can be customized to suit the colors and features
+                you want including easily migrating all your posts and data from
+                your current site. Get in touch with me through my social media
+                in the menu for more info.
               </Typography>
             </AccordionDetails>
           </Accordion>
