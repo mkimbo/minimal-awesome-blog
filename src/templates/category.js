@@ -7,6 +7,7 @@ import Image from '../components/image'
 import PostPreview from '../components/post-preview'
 
 import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 
 const Category = ({ pageContext, data }) => {
   const { category } = pageContext
@@ -22,7 +23,7 @@ const Category = ({ pageContext, data }) => {
           </div>
         </Grid>
         <Grid item xs={12}>
-          <h3>{`${totalposts} categorized under "${category}"`}</h3>
+          <Typography variant="h5">{`${totalposts} categorized under "${category}"`}</Typography>
         </Grid>
       </Grid>
 

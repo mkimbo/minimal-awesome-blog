@@ -29,14 +29,20 @@ const SocialMedia = () => {
   const classes = useStyles()
   return (
     <div className={classes.SocialMedia}>
-      <IconButton href="https://facebook.com/Jack.robinz">
-        <Facebook className={classes.Facebook} />
+      <IconButton>
+        <a href="https://facebook.com/Jack.robinz" alt="facebook-link">
+          <Facebook className={classes.Facebook} />
+        </a>
       </IconButton>
-      <IconButton href="https://twitter.com/JackMkimbo">
-        <Twitter className={classes.Twitter} />
+      <IconButton>
+        <a href="https://twitter.com/JackMkimbo" alt="twitter-link">
+          <Twitter className={classes.Twitter} />
+        </a>
       </IconButton>
-      <IconButton href="https://jackmkimbo.netlify.app">
-        <Language className={classes.Language} />
+      <IconButton>
+        <a href="https://jackmkimbo.netlify.app" alt="website-link">
+          <Language className={classes.Language} />
+        </a>
       </IconButton>
     </div>
   )

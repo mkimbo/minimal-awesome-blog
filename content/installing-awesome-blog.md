@@ -10,7 +10,7 @@ tags:
 date: '2021-01-15'
 ---
 
-This blog site can be installed on any mobile and computer platform to provide full offline access among other features. Currently PWAs support 85% of all features supported by native mobile and desktop apps, and the number will only rise with time.
+This blog site can be installed on any mobile and computer platform to provide full offline access among other features. It is a **Progressive Web Application** which has many benefits the major one being bridging the gap between web applications and native applications. Currently PWAs support 85% of all features supported by native mobile and desktop apps, and the number will only rise with time.
 
 ![thank you](../static/assets/blog3.jpg)
 

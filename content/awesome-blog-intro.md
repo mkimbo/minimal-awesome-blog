@@ -5,7 +5,7 @@ category: 'introduction'
 tags:
   - affordable
   - youth
-  - Future
+  - future
 
 date: '2021-01-30'
 ---

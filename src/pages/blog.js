@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
 
 import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 
 const IndexPage = ({ data }) => {
   const postEdges = data.allMarkdownRemark.edges
@@ -20,7 +21,7 @@ const IndexPage = ({ data }) => {
           </div>
         </Grid>
         <Grid item xs={12}>
-          <h2>Awesome posts</h2>
+          <Typography variant="h5">Latest Posts</Typography>
         </Grid>
       </Grid>
 
