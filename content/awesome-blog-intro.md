@@ -31,19 +31,19 @@ This blog was made with the JAMSTACK architecture using the following technologi
 
 Full feature list:
 
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Automatic optimization of all image assets via `gatsby-image` for faster loading times
-- Email Subscription to Blog (in development)
+- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JavaScript files
+- Automatic optimization of all image assets via with smooth loading effects and faster loading times.
+- Email Subscription to Blog (additional price)
 - Loading progress for slow networks
 - Offline support
 - Disqus comments support
   - Notifications about new comments
   - comments moderation
 - Responsive design across all screen sizes
-- Google Analytics support (in development)
+- Google Analytics support
 - SEO
 
-* Posts in Markdown
+* For Posts in Markdown,
   - Embedded Tweets in blog
   - Embedded Youtube videos
 * Tags
@@ -52,7 +52,7 @@ Full feature list:
   - Separate page for posts under each category
 * Suggested posts at the end of each post.
 
-* Social features
+* Social features to share posts to social media
   - Twitter tweet button
   - Facebook share/share count
   - LinkedIn share button
@@ -68,4 +68,4 @@ Full feature list:
 
 [@JackMkimbo](https://twitter.com/JackMkimbo)
 
-You can also visit [my github profile](https://github.com/mkimbo/mkimbo) or my Progressive web app which showcases my [other projects](https://jack-mkimbo.netlify.app).
+You can also visit [my github profile](https://github.com/mkimbo/mkimbo) or my website which showcases my [other projects](https://jack-mkimbo.netlify.app).

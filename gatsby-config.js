@@ -110,10 +110,21 @@ module.exports = {
         short_name: `Awesome Blog`,
         description: `An awesome blog built with React`,
         start_url: `/`,
-        background_color: `#6806c9`,
-        theme_color: `#6806c9`,
+        background_color: `#110f8b`,
+        theme_color: `#110f8b`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icons: [
+          {
+            src: '/logos/ab-logo-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/logos/ab-logo-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
       },
     },
     {

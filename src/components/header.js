@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import clsx from 'clsx'
-import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import AppBar from '@material-ui/core/AppBar'
@@ -14,8 +14,7 @@ import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
-import ChevronRightIcon from '@material-ui/icons/ChevronRight'
+import ClearIcon from '@material-ui/icons/Clear'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
@@ -25,7 +24,7 @@ import InfoIcon from '@material-ui/icons/Info'
 
 import SocialMedia from './social-media'
 
-const drawerWidth = 240
+const drawerWidth = 400
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    background: 'linear-gradient(to right,  #663399, #5B72FF)',
+    background: '#110f8b',
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -64,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     padding: '0 8px',
     ...theme.mixins.toolbar,
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-start',
   },
   content: {
     flexGrow: 1,
@@ -87,7 +86,6 @@ const useStyles = makeStyles((theme) => ({
 const Header = ({ siteTitle }) => {
   const classes = useStyles()
 
-  const theme = useTheme()
   const [open, setOpen] = React.useState(false)
 
   function handleDrawerOpen() {
@@ -134,11 +132,7 @@ const Header = ({ siteTitle }) => {
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? (
-              <ChevronLeftIcon color="primary" />
-            ) : (
-              <ChevronRightIcon color="primary" />
-            )}
+            <ClearIcon color="primary" />
           </IconButton>
         </div>
         <Divider />
@@ -148,7 +142,7 @@ const Header = ({ siteTitle }) => {
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
-              <ListItemText>Home</ListItemText>
+              <ListItemText color="primary">Home</ListItemText>
             </ListItem>
           </Link>
           <Link to="/blog">
@@ -156,7 +150,7 @@ const Header = ({ siteTitle }) => {
               <ListItemIcon>
                 <ListIcon />
               </ListItemIcon>
-              <ListItemText>Blog</ListItemText>
+              <ListItemText color="primary">Blog</ListItemText>
             </ListItem>
           </Link>
           <Link to="/about">
@@ -164,7 +158,7 @@ const Header = ({ siteTitle }) => {
               <ListItemIcon>
                 <InfoIcon />
               </ListItemIcon>
-              <ListItemText>Information</ListItemText>
+              <ListItemText color="primary">Information</ListItemText>
             </ListItem>
           </Link>
         </List>

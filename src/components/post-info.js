@@ -30,14 +30,13 @@ const PostInfo = ({ postNode }) => {
         )}`}
         subheader={`${postNode.timeToRead} min read`}
       />
-      <Link to={`/categories/${post.category}`}>
-        <CardHeader
-          avatar={<FolderIcon color="primary" fontSize="large" />}
-          title="In category"
-          subheader={post.category}
-          subheaderTypographyProps={{ color: 'primary' }}
-        />
-      </Link>
+      <CardHeader
+        avatar={<FolderIcon color="primary" fontSize="large" />}
+        title="In category"
+        subheader={
+          <Link to={`/categories/${post.category}`}>{post.category}</Link>
+        }
+      />
     </div>
   )
 }

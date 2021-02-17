@@ -8,10 +8,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'center',
+    justifyContent: 'start',
     alignContent: 'center',
     alignItems: 'center',
-    margin: '15px 0',
+    margin: '5px 7px',
+    width: 'fit-content',
   },
   Facebook: {
     color: '#357cda',
