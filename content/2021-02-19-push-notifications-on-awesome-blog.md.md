@@ -1,7 +1,7 @@
 ---
 title: Push Notifications on Awesome Blog
 date: 2021-02-19T16:29:03.374Z
-cover: assets/blog2.jpg
+cover: static/assets/blog2.jpg
 slug: push-notifications-on-awesome-blog
 category: technology
 tags:
