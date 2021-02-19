@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: git-gateway # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
-  branch: master # Branch to update
+  branch: main # Branch to update
   repo: mkimbo/minimal-awesome-blog # Repo for pushing new commits. Make sure to replace with your repo!
 
 media_folder: static/assets
