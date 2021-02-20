@@ -6,6 +6,8 @@ slug: push-notifications-on-awesome-blog
 category: technology
 tags:
   - technology
+  - society
+  - youth
 ---
 This is a test post I uploaded to test the admin panel which is used for for adding, editing and previewing articles. This admin panel is easy and straightforward to use. 
 
