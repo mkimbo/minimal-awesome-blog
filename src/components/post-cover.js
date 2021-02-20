@@ -10,7 +10,7 @@ const PostCover = ({ filename, alt }) => (
         images: allFile {
           edges {
             node {
-              relativePath
+              absolutePath
               name
               childImageSharp {
                 fluid(maxHeight: 500) {
@@ -24,7 +24,7 @@ const PostCover = ({ filename, alt }) => (
     `}
     render={(data) => {
       const image = data.images.edges.find((n) =>
-        n.node.relativePath.includes(filename)
+        n.node.absolutePath.includes(filename)
       )
 
       if (!image) return null
