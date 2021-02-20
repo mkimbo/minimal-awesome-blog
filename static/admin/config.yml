@@ -6,7 +6,6 @@ backend:
   repo: mkimbo/minimal-awesome-blog # Repo for pushing new commits. Make sure to replace with your repo!
 
 media_folder: static/assets
-public_folder: assets
 
 collections:
   - name: blog
@@ -18,7 +17,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Cover Image', name: 'cover', widget: 'image' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

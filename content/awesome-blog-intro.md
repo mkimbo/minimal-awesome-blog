@@ -10,9 +10,11 @@ tags:
 date: '2021-01-30'
 ---
 
-Welcome to Awesome Blog, this is a feature-rich blog made with modern web technologies which make it more secure, easily accessible online(SEO ready) and offers offline support. Yes you read right, you can easily install this blog on your smartphone or computer to access all the posts even without an internet connection. When you get internet connection back the blog will auto update itself on any new blog posts. This is a big boost in the efforts of keeping an audience to a blog. It also has minimal styles and can be easily styled and customized to your specifications and liking.
+Welcome to Awesome Blog, this is a blog template made with modern web technologies which make it more secure, easily accessible online(SEO ready) and offers offline support. Yes you read right, you can easily install this blog on your smartphone or computer to access all the posts even without an internet connection. When you get internet connection back the blog will auto update itself on any new blog posts. This is a big boost in the efforts of keeping an audience to a blog. It also has minimal styles and can be easily styled and customized to your specifications and liking.
 
-Below are more features this blog has. You can also get in touch with me for affordable web services and products including this blog website.
+I am also working on Push notifications that will ensure your subcribed audience is re-engaged every time you post a new article with a link in their notifications tab. This will also work even when the subscriber is offline. Amazing, isnt it?
+
+Below are more features this blog has. You can also get in touch with me for affordable web services and mobile applications including this blog website.
 
 N/B - There is a 20% discount for the first 5 buyers of this blog
 
